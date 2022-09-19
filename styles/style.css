@@ -9,7 +9,7 @@
 */
 
 :root {
-    --green-color: #367199;
+    --green-color: #1c6392;
     --purple-color: #5f2c82;
 }
 
@@ -43,6 +43,9 @@ section.login-screen {
     border-radius: 20px;
     overflow: hidden; /* Tudo que ficar de fora da borda será escondido*/
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.459);
+
+    transition: width .3s, height .3s ; /*animação para quando diminuir e aumentar*/
+    transition-timing-function: ease; /*suavizar animação*/
 }
 
 section.login-screen > div.image {

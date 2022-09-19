@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root {
+    --green-color: #2586c7;
+    --purple-color: #5f2c82;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body, html {
+        background-image: linear-gradient(to top, var(--purple-color), var(--green-color));
+    }
+
+    section.login-screen {
+        width: 80vw;
+    }
+
+
+    /*Mudando posicionamento das div ao trocar de tela*/
+    section.login-screen > div.image { /*especificando tamanho, pois a imagem ainda não tinha um tamanho*/
+        float: left;
+        height: 100%;/*100% da altura da div.login-screen*/
+        width: 30%; 
+    }
+
+    section.login-screen > div.form {
+        float: right;
+        width: 70%; /*pra fechar 100%*/
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body, html {
+        background-image: linear-gradient(to top, var(--purple-color), var(--green-color));
+    }
+
+    section.login-screen {
+        width: 90vw;
+    }
+
+    section.login-screen > div.image {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section.login-screen > div.form {
+        float: right;
+        width: 50%;
+    }
+}
