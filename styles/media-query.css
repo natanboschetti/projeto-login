@@ -6,13 +6,14 @@
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) { /*tablet*/
     body, html {
         background-image: linear-gradient(to top, var(--purple-color), var(--green-color));
     }
 
     section.login-screen {
         width: 80vw;
+        height: 280px;
     }
 
 
@@ -29,13 +30,14 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 992px) and (max-width: 1600px){ /*desktop*/
     body, html {
         background-image: linear-gradient(to top, var(--purple-color), var(--green-color));
     }
 
     section.login-screen {
-        width: 90vw;
+        width: 70vw;
+        height: 400px;
     }
 
     section.login-screen > div.image {
@@ -54,6 +56,7 @@
     }
 
     div.form > p { /*letra aumentar quando tela aumentar*/
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin: 20px 0px;
     }
 }
